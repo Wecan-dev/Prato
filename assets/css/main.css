@@ -931,6 +931,10 @@ background-repeat: no-repeat!important;
     position: relative;
     background-repeat: no-repeat;
 }
+
+textarea{
+	resize: none;
+}
 .form-custom-f input[type="text"],
 .form-custom-f input[type="email"],
 .form-custom-f input[type="number"],
