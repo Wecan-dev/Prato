@@ -123,9 +123,9 @@ a:hover {
 
 .main-banner__img img {
 	width: 100%;
-	height: unset;
-	object-fit: none;
-	object-position: top;
+	height: 85vh;
+	object-fit: cover;
+	
 }
 
 .main-banner {

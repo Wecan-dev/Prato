@@ -93,9 +93,7 @@
   .main-contact {
     padding: 40px 60px;
   }
-  .main-banner__content{
-    height: 92vh;
-  }
+  
   .content-form {
     padding: 30px 40px 31px;
   }
@@ -123,7 +121,7 @@
 }
   .content-zone span::before {
   
-    left: 40%;
+    left: 44%;
 }
   .content-zone span::after {
 
@@ -176,7 +174,7 @@
   }
 
   .main-banner__img img {
-    height: 100vh;
+    height: 90vh;
 
   }
 
@@ -216,6 +214,25 @@
     bottom: 250px;
     right: 180px;
   }
+  .padding-menu{
+    padding: 0;
+  }
+  .footer__grid--tem:nth-child(1) ul li{
+    margin: 10px
+  }
+  .ubication{
+    left: 11%;
+    top: -14%;
+  }
+  .items-planos{
+    width: 100%;
+  }
+  .number-2{
+    right: 0;
+  }
+  .dropdown_aroow{
+    bottom: 15px;
+  }
 }
 
 @media (min-width: 0px) and (max-width: 767px) {
@@ -254,6 +271,11 @@
 .padding-menu {
     padding-left: 0px;
 }
+
+
+.footer__grid--tem:nth-child(1) ul li{
+    margin: 10px
+  }
 
 
 
@@ -532,7 +554,7 @@
   }
 
   .main-banner__img img {
-    height: fit-content;
+    height: 85vh;
   }
 
   .main-banner__text p:nth-child(1) {
@@ -595,7 +617,7 @@
   }
 
   .content-zone span::before {
-    left: 48%;
+    left: 53%;
   }
 
   .grid-slide img {
@@ -689,14 +711,14 @@
     padding-left: 0px;
   }
   .main-banner__img img {
-    height: 92vh;
+    height: 100vh;
   }
   .main-contact {
     background-size: cover;
   }
   .content-form {
     padding: 30px 35px 31px;
-    grid-template-columns: 30% 60%;
+    grid-template-columns: 40% 60%;
   }
   .form__item p {
     font-size: 1.4rem;
@@ -722,6 +744,36 @@
   }
   .footer__grid--tem a {
     font-size: 14px;
+  }
+  .main-zone__item li::before{
+    background: transparent;
+  }
+  .main-zone li{
+    margin: 0 25px;
+  }
+  .main-zone__item ul{
+    padding: 0
+  }
+  .h-5 {
+    height: 260px;
+  }
+  .main-zone{
+    padding-top: 10px;
+  }
+  .main-zone h3{
+    margin-bottom: 10px;
+  }
+  .main-zone__item{
+    margin-bottom: 30px;
+  }
+  .content-zone__text .items ul:nth-child(1){
+    margin-right: 0;
+  }
+  .content-zone__text ul{
+    width: 280px;
+  }
+  .content-zone span::before{
+    left: 47%;
   }
 }
 
