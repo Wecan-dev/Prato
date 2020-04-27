@@ -9,11 +9,12 @@
 	<link
 		href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100&display=swap"
 		rel="stylesheet">
+	
 	<link rel="stylesheet" href="assets/css/fonts.css">
 	<link href="assets/css/slick.css" rel="stylesheet" />
-	<link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css" rel="stylesheet">
 	<link href="assets/css/slick-theme.css" rel="stylesheet" />
 	<link href="assets/css/font-awesome.css" rel="stylesheet" />
+	<link href="assets/css/animate/animate.css" rel='stylesheet'>
 	<link href="assets/css/main.css" rel="stylesheet" />
 	<link href="assets/css/responsive.css" rel="stylesheet" />
 </head>
@@ -75,11 +76,11 @@
 
 		<div class="main-banner__content">
 			<div class="main-banner__items">
-				<div class="main-banner">
+				<div class="main-banner " >
 					<div class="main-banner__img">
 						<img src="assets/img/banner.png" alt="">
 					</div>
-					<div class="main-banner__text">
+					<div class="main-banner__text " data-animation='fadeInUp'>
 						<p>Prato <br>APARTAMENTOS</p>
 						<hr>
 						<span>Ubicación</span>
@@ -100,7 +101,7 @@
 					<div class="main-banner__img">
 						<img src="assets/img/banner2.jpg" alt="">
 					</div>
-					<div class="main-banner__text">
+					<div class="wow main-banner__text " data-animation='fadeInUp'>
 						<p>Prato <br>APARTAMENTOS</p>
 						<hr>
 						<span>Ubicación</span>
@@ -234,8 +235,8 @@
 	<section id="zonas-comunes">
 		<div class="content-zone">
 
-			<div class="content-zone__item">
-				<div class="title-general title-general__white">
+			<div class="content-zone__item" data-animation='fadeInUp'>
+				<div class="title-general title-general__white" class='wow fadeInDown' data-wow-delay='.5s'>
 					<h3>Zonas <span>comunes</span></h3>
 					<span class="number number-zone">02</span>
 				</div>
@@ -869,6 +870,7 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/blazy/1.8.2/blazy.min.js"></script>
 	<script src="assets/js/slick.min.js"></script>
 	<script src="assets/js/setting-slick.js"></script>
+	<script src='assets/js/wow.min.js'></script>
 	<script src="assets/js/main.js"></script>
 
 </div>

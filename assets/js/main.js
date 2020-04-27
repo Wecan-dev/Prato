@@ -1,3 +1,6 @@
+new WOW().init();
+
+
 $(function () {
   'use strict'
 
@@ -41,3 +44,4 @@ $(function () {
 
   })
 })
+
