@@ -219,9 +219,13 @@
 }
 
 @media (min-width: 0px) and (max-width: 767px) {
+
 .items-planos__salto{
   display: block;
 }
+  .form-banner .form__item{
+    justify-content: start;
+  }
 
 .main-galery {
     padding: 0px 20px;
