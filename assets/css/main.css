@@ -929,7 +929,12 @@ background-repeat: no-repeat!important;
     height: 100%;
     padding: 40px 120px;
     position: relative;
-    background-repeat: no-repeat;
+	background-repeat: no-repeat;
+	
+
+
+
+	
 }
 .form-custom-f input[type="text"],
 .form-custom-f input[type="email"],
