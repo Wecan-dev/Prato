@@ -19,16 +19,19 @@
 </head>
 
 <body>
-	<header>
+<div class="pdd-top">
+		<header>
 		<nav class="navbar navbar-expand-md fixed-top navbar-fixed-js" id="nav">
 			<div class="container">
 				<div class="main-brand">
 					<a class="navbar-brand" href="index.html">
 						<img id="iso" src="assets/img/logo-header.png" alt="" />
 					</a>
-					<button class="navbar-toggler p-0 border-0" data-toggle="offcanvas" type="button">
-						<span class="navbar-toggler-icon fa fa-bars"></span>
-					</button>
+					<button class="navbar-toggler p-2 border-0 hamburger hamburger--elastic ml-autos" data-toggle="offcanvas" type="button">
+            <span class="hamburger-box">
+              <span class="hamburger-inner"></span>
+            </span>
+          </button>
 				</div>
 				<div class="navbar-collapse offcanvas-collapse">
 					<ul class="navbar-nav m-auto">
@@ -177,11 +180,13 @@
 
 				</form>
 			</div>
+			<div id="acerca" ></div>
 		</div>
+
 	</section>
 
 	<!-- Acerca de.... -->
-	<section id="acerca" class="section">
+	<section class="section">
 		<div class="main-about">
 			<div class="main-about__item">
 				<img src="assets/img/about.png" alt="">
@@ -261,14 +266,15 @@
 
 
 				</div>
+				
 			</div>
-
+ <div id="galeria-exterior"></div>
 
 		</div>
 	</section>
 
 	<!-- galleria -->
-	<section id="galeria-exterior" class="section-galery" >
+	<section class="section-galery" >
 		<div class="main-galery">
 			<div class="title-general">
 				<h3>Galería <span>exterior</span></h3>
@@ -412,8 +418,11 @@
 					
           
 				</div>
+				
 			</div>
+
 		</div>
+<div  id="galeria-apartamento"></div>
 	</section>
 
 
@@ -469,14 +478,20 @@
  -->
 
 	<!-- galey apa -->
-	<section id="galeria-apartamento">
+	<section>
 
 		<div class="title-general title-general-p  title-general__white title-general-bg">
 			<h3 class="p-galeria">GALERÍA <span>APARTAMENTO </span></h3>
 		</div>
 		<div class="container-galery-2 mr-0 pr-0 mt-1">
+			<div class="main-galery__grid">
+				<div class="grid-slider">
 
-			<div class="masonry-with-columns">
+
+					<div class="grid-slide grid-slide__galeria">
+						<div class="grid-row">
+
+							<div class="masonry-with-columns">
 
 				<div class="galery-items">
 
@@ -556,34 +571,92 @@
 					</a>
 				</div>
 			</div>
-		</div>
-
-		<!-- <div class="">
-			<div class="main-galery__grid">
-				<div class="grid-slider">
-
-
-					<div class="grid-slide grid-slide__galeria">
-						<div class="grid-row">
-
-							<img src="assets/img/image_6.png" alt="" />
-							<img src="assets/img/image_5.png" alt="" />
-							<img src="assets/img/image_7.png" alt="" />
-							<img src="assets/img/image_6.png" alt="" />
-							<img src="assets/img/image_7.png" alt="" />
-							<img src="assets/img/image_5.png" alt="" />
 						</div>
 
 					</div>
 					<div class="grid-slide grid-slide__galeria">
 						<div class="grid-row">
 
-							<img src="assets/img/image_6.png" alt="" />
-							<img src="assets/img/image_5.png" alt="" />
-							<img src="assets/img/image_7.png" alt="" />
-							<img src="assets/img/image_6.png" alt="" />
-							<img src="assets/img/image_7.png" alt="" />
-							<img src="assets/img/image_5.png" alt="" />
+							<div class="masonry-with-columns">
+
+				<div class="galery-items">
+
+					<a href="#">
+						<div class="main-galery-items__card">
+							<div class="main-galery-items__img"
+								style="background:url('assets/img/image_7.png')">
+							</div>
+						</div>
+					</a>
+
+				</div>
+
+				<div class="galery-items">
+
+					<a href="#">
+						<div class="main-galery-items__card">
+							<div class="main-galery-items__img"
+								style="background:url('assets/img/image_5.png')">
+							</div>
+						</div>
+					</a>
+
+				</div>
+				<div class="galery-items">
+
+					<a href="#">
+						<div class="main-galery-items__card">
+							<div class="main-galery-items__img"
+								style="background:url('assets/img/image_6.png')">
+							</div>
+						</div>
+					</a>
+
+				</div>
+				<div class="galery-items">
+
+					<a href="#">
+						<div class="main-galery-items__card">
+							<div class="main-galery-items__img"
+								style="background:url('assets/img/image_5.png')">
+							</div>
+						</div>
+					</a>
+
+				</div>
+				<div class="galery-items">
+
+					<a href="#">
+						<div class="main-galery-items__card">
+							<div class="main-galery-items__img"
+								style="background:url('assets/img/image_6.png')">
+							</div>
+						</div>
+					</a>
+
+				</div>
+				<div class="galery-items">
+
+					<a href="#">
+						<div class="main-galery-items__card">
+							<div class="main-galery-items__img"
+								style="background:url('assets/img/image_7.png')">
+							</div>
+						</div>
+					</a>
+
+				</div>
+				<div class="galery-items">
+
+					<a href="#">
+						<div class="main-galery-items__card">
+							<div class="main-galery-items__img"
+								style="background:url('assets/img/image_5.png')">
+							</div>
+						</div>
+					</a>
+				</div>
+			</div>
 
 
 						</div>
@@ -591,7 +664,7 @@
 					</div>
 
 
-					<div class="barra-progress">
+					<div class="barra-progress" style="margin-top:20px;">
 						<div class="progress" role="progressbar" aria-valuemin="0" aria-valuemax="100">
 							<span class="slider__label sr-only">
 
@@ -601,9 +674,11 @@
 				</div>
 				</sectio>
 			</div>
+			
+		</div>
 
 
-		</div> -->
+		</div> 
 	</section>
 	<!-- ubicacion -->
 	<section id="ubicacion" class="">
@@ -620,6 +695,7 @@
 				<img src="assets/img/ubication.png" alt="">
 
 				<img class="ubication" src="assets/img/logo_2.png" alt="">
+				<div id="formulario" ></div>
 			</div>
 
 		</div>
@@ -627,7 +703,7 @@
 
 	<!-- form -->
 	<section>
-		<div class="main-contact" style="background-image: url(assets/img/image.png);">
+		<div  class="main-contact" style="background-image: url(assets/img/image.png);">
 
 			<div class="form__item form__item--contact form-custom-f">
 				<div>
@@ -730,7 +806,7 @@
 					<li><a href="#galeria-apartamento">Galería del apartamento</a></li>
 
 					<li><a href="#ubicacion">Ubicación</a></li>
-					<li><a href="#contactanos">Formulario</a></li>
+					<li><a href="#formulario">Formulario</a></li>
 				</ul>
 			</div>
 			<div class="footer__grid--tem">
@@ -781,6 +857,7 @@
 	<script src="assets/js/setting-slick.js"></script>
 	<script src="assets/js/main.js"></script>
 
+</div>
 
 	<script>
 		new WOW().init();
