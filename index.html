@@ -68,7 +68,7 @@
 	</header>
 
 	<!-- banner -->
-	<section class="banner p-0">
+	<section class="banner p-0 section">
 
 		<div class="main-banner__content">
 			<div class="main-banner__items">
@@ -120,12 +120,12 @@
 		</div>
 	</section>
 	<!-- form -->
-	<section class="seccion-form-banner">
-		<div class="content-form" id="contacto">
+	<section class="seccion-form-banner section">
+		<div class="content-form form-banner" id="contacto">
 			<div class="form__item">
 				<p>Te llamamos para darte <br> <span>una asesoría completa</span></p>
 			</div>
-			<div class="form__item">
+			<div class="form__item ">
 				<form action="#">
 					<div class="row">
 						<div class="col-md-5 col-lg-4 formulario-banner">
@@ -181,7 +181,7 @@
 	</section>
 
 	<!-- Acerca de.... -->
-	<section id="acerca">
+	<section id="acerca" class="section">
 		<div class="main-about">
 			<div class="main-about__item">
 				<img src="assets/img/about.png" alt="">
@@ -268,7 +268,7 @@
 	</section>
 
 	<!-- galleria -->
-	<section id="galeria-exterior" class="" >
+	<section id="galeria-exterior" class="section-galery" >
 		<div class="main-galery">
 			<div class="title-general">
 				<h3>Galería <span>exterior</span></h3>
@@ -297,7 +297,7 @@
 
 							</div>
 
-						</div>>
+						</div>
 
 						<div class="barra-progress">
 							<div class="progress" role="progressbar" aria-valuemin="0" aria-valuemax="100">
@@ -315,7 +315,7 @@
 	</section>
 
 	<!-- planos -->
-	<section id="planos-proyecto"> 
+	<section id="planos-proyecto" class="section-planos"> 
 		<div class="content-zone__planos row">
 			<div class="main-plan col-12">
         <div class="main-planos__content">
@@ -327,7 +327,9 @@
               	<img src="assets/img/planos.png" alt="">
             </div>
             <div class="content-zone__text">
-						<p>PLANOS DEL PROYECTO</p>
+						<div class="title-general title-general-planos">
+					<h3>PLANOS DEL <span>PROYECTO</span></h3>
+				</div>
 						<p>El apartamento típico estará conformado por los siguientes espacios:</p>
             	<div class="items-planos ">
 								<ul>
@@ -355,8 +357,9 @@
               	<img src="assets/img/planos.png" alt="">
             </div>
             <div class="content-zone__text">
-						<p>PLANOS DEL PROYECTO</p>
-						<p>El apartamento típico estará conformado por los siguientes espacios:</p>
+						<div class="title-general title-general-planos">
+					<h3>PLANOS DEL <span>PROYECTO</span></h3>
+				</div>						<p>El apartamento típico estará conformado por los siguientes espacios:</p>
             	<div class="items-planos ">
 								<ul>
 						<li><img src="assets/img/iconos_planos/icon_2.png" alt=""> Salón</li>
@@ -383,7 +386,9 @@
               	<img src="assets/img/planos.png" alt="">
             </div>
             <div class="content-zone__text">
-						<p>PLANOS DEL PROYECTO</p>
+							<div class="title-general title-general-planos">
+					<h3>PLANOS DEL <span>PROYECTO</span></h3>
+				</div>
 						<p>El apartamento típico estará conformado por los siguientes espacios:</p>
             	<div class="items-planos ">
 								<ul>
@@ -466,10 +471,10 @@
 	<!-- galey apa -->
 	<section id="galeria-apto">
 
-		<div class="title-general title-general__white title-general-bg">
-			<h3 class="container">GALERÍA <span>APARTAMENTO </span></h3>
+		<div class="title-general title-general-p  title-general__white title-general-bg">
+			<h3 class="container-galery-2">GALERÍA <span>APARTAMENTO </span></h3>
 		</div>
-		<div class="container mr-0 pr-0 mt-1">
+		<div class="container-galery-2 mr-0 pr-0 mt-1">
 
 			<div class="masonry-with-columns">
 
@@ -604,8 +609,8 @@
 	<section id="ubicacion" class="">
 
 		<div class="main-ubication">
-			<div class="title-general title-general__white title-general-bg">
-				<h3>Ubicación<span></span></h3>
+			<div class="title-general title-general-p  title-general__white title-general-bg">
+				<h3 class="title-ubicacion">Ubicación<span></span></h3>
 			</div>
 			<div class="ubication__text">
 				<h3>AQUÍ NOS PUEDES <span>ENCONTRAR</span></h3>
@@ -624,12 +629,13 @@
 	<section>
 		<div class="main-contact" style="background-image: url(assets/img/image.png);">
 
-			<div class="form__item form__item--contact">
+			<div class="form__item form__item--contact form-custom-f">
 				<div>
 					<div class="row">
-						<div class="col-md-7 form__item--contact--bg">
+						<div class="col-md-9 form__item--contact--bg">
 							<div class="main-contact_form">
 								<p>quiero recibir información</p>
+								<hr>
 							</div>
 							<div class="row form-group">
 								<div class="col-md-12 mb-3 mb-md-0">
@@ -674,8 +680,8 @@
 
 							<div class="col-md-12 center pl-4 mt-2 mb-2">
 								<input type="checkbox" class="custom-control-input " id="customCheck" name="example1" />
-								<label class="custom-control-label" for="customCheck">Acepto politicas y
-									privacidad</label>
+								<label class="custom-control-label" for="customCheck">Acepto <a style="color: white !important; border-bottom: 1px solid white; " target="_blank" href="assets/img/MANUAL_DE_POLITICAS_PROMOTORA.pdf">politicas y
+									privacidad</a></label>
 							</div>
 							<div class="row form-group">
 								<div class="col-md-12 ">
@@ -684,7 +690,7 @@
 							</div>
 
 						</div>
-						<div class="col-md-6">
+						<div class="col-md-3">
 
 						</div>
 					</div>
