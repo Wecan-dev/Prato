@@ -85,6 +85,7 @@ a:hover {
 	text-transform: uppercase;
 }
 
+
 .navbar-nav {
 	padding-left: 22px;
 }
@@ -1182,7 +1183,8 @@ textarea.form-control {
     margin-bottom: 55px;
 }
 .items-slider img {
-    object-fit: none;
+	object-fit: contain;
+    height: 300px;
 }
 
 .main-planos__items {
