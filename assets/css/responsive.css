@@ -212,6 +212,10 @@
   .main-zone h3{
     margin-bottom: 20px
   }
+  .main-planos__content .slick-dots {
+    bottom: 250px;
+    right: 180px;
+  }
 }
 
 @media (min-width: 0px) and (max-width: 767px) {
@@ -497,10 +501,16 @@
 }
 
 
-
+  .content-zone__text ul{
+    width: 95%;
+  }
+  .items-planos{
+    width: 100%;
+  }
 
   .masonry-with-columns {
     display: block;
+    padding: 0 20px;
 
   }
 
