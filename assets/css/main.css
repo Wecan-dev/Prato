@@ -918,6 +918,7 @@ background-repeat: no-repeat!important;
 .form-custom-f input[type="tel"],
 .form-custom-f input[type="date"]{
 	width: 80%;
+	border-bottom: 2px solid #ffffff42 !important;
 }
 
 .form-custom-f input::placeholder{
@@ -935,7 +936,7 @@ background-repeat: no-repeat!important;
 
 .form__item--contact input {
 	background-color: transparent !important;
-	border-bottom: 2px solid #ffffff42 !important;
+	
 	font-size: 15px;
 	padding: 0;
 }
