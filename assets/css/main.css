@@ -937,6 +937,7 @@ background-repeat: no-repeat!important;
 .form-custom-f input[type="tel"],
 .form-custom-f input[type="date"]{
 	width: 80%;
+	color: #fff !important;
 	border-bottom: 2px solid #ffffff42 !important;
 }
 

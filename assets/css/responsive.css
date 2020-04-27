@@ -206,7 +206,9 @@
 }
 
 @media (min-width: 0px) and (max-width: 767px) {
-
+  .form-banner .form__item{
+    justify-content: start;
+  }
 
 .main-galery {
     padding: 0px 20px;
