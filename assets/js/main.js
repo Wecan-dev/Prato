@@ -45,3 +45,39 @@ $(function () {
   })
 })
 
+
+$(document).ready(function() {
+  $('#pratos-slider').on('init', function(e, slick) {
+      var $firstAnimatingElements = $('div.main-banner__items:first-child').find('[data-animation]');
+      doAnimations($firstAnimatingElements);    
+  });
+
+  $('#pratos-slider').on('beforeChange', function(e, slick, currentSlide, nextSlide) {
+      var $animatingElements = $('div.main-banner__items[data-slick-index="' + nextSlide + '"]').find('[data-animation]');
+      doAnimations($animatingElements);    
+  });
+
+  $('.main-banner__content').slick({
+    infinite: true,
+    fade: true,
+    cssEase: 'linear',
+    autoplay:true,
+    autoplaySpeed: 5000
+  });
+
+  function doAnimations(elements) {
+    var animationEndEvents = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
+    elements.each(function() {
+      var $this = $(this);
+      var $animationDelay = $this.data('delay');
+      var $animationType = 'animated ' + $this.data('animation');
+      $this.css({
+        'animation-delay': $animationDelay,
+        '-webkit-animation-delay': $animationDelay
+      });
+      $this.addClass($animationType).one(animationEndEvents, function() {
+        $this.removeClass($animationType);
+      });
+    });
+  }
+});
