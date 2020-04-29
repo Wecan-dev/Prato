@@ -125,6 +125,7 @@ a:hover {
 	width: 100%;
 	height: 85vh;
 	object-fit: cover;
+	object-position: bottom;
 	
 }
 
@@ -309,7 +310,8 @@ label {
 
 .main-about__item img {
     width: 100%;
-    object-fit: cover;
+	object-fit: cover;
+	height: 100%;
     object-position: center;
 }
 
