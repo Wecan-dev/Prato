@@ -20,7 +20,7 @@
 </head>
 
 <body>
-<div class="pdd-top">
+<div id="navtop" class="pdd-top">
 		<header>
 		<nav class="navbar navbar-expand-md fixed-top navbar-fixed-js" id="nav">
 			<div class="container">
@@ -53,14 +53,14 @@
 							<a class="nav-link " href="#galeria-apartamento">galería apartamento</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="#ubicacion">UBICACIÓN</a>
+							<a class="nav-link" href="#formulario">contacto</a>
 						</li>
 					
 					</ul>
 				
 				</div>
 			</div>
-			<div class="social-icons">
+			<div class="social-icons d-none">
 				<li class="nav-item ">
 					<a class="nav-link" target="_blank" href="https://www.facebook.com/nivelpropiedadraiz"><img src="assets/img/iconos/fb_2.png" alt=""></a>
 				</li>
@@ -72,7 +72,7 @@
 	</header>
 
 	<!-- banner -->
-	<section class="banner p-0 section">
+	<section id="navtop" class="banner p-0 section">
 
 		<div id="pratos-slider"  class="main-banner__content">
 			<div class="main-banner__items">
@@ -118,28 +118,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="main-banner__items">
-				<div class="main-banner">
-					<div class="main-banner__img">
-						<img src="assets/img/banners/3.jpg" alt="">
-					</div>
-					<div class="wow main-banner__text " data-animation='fadeInUp'>
-						<p>Prato <br>APARTAMENTOS</p>
-						<hr>
-						<span>Ubicación</span>
-						<p>LOMA DE SAN JOSE, <br> SABANETA</p>
-						<span>Área </span>
-						<p> 
-							70 m² hasta 87 m²</p>
-						<span>Desde </span>
-						<div class="price">
-							<p>$323.601.608
-							</p>
-							<small>Valor impuestos incluido*</small>
-						</div>
-					</div>
-				</div>
-			</div>
+		
 		</div>
 		<div class="dropdown_aroow">
 		<a href="#acerca">	<img src="assets/img/dropdown.png" alt=""></a>
@@ -223,21 +202,23 @@
 					<p>
 						Prato apartamentos hará parte de la ciudadela Toscana, una de las obras más importantes de Sabaneta en el sector de la Loma de San José, que le permitirán ser un proyecto de fácil acceso y cercano a diferentes lugares de interés como el centro comercial Aves Marías, el mall Zaratoga, la Universidad Ceipa, el Hospital Venancio Díaz, entre otros.  Además la ciudadela Toscana contará con una reserva natural con cerca de 70000 metros cuadrados.
 					</p>
+					
 				</div>
 				<!--zonas -->
 				<div class="main-zone">
-					<h3>Zonas comunes</h3>
+					<a href="#galeria-apartamento" class="btn-general">ver galeria</a>
+					<!-- <h3>Zonas comunes</h3> -->
 
 					<div class="main-zone__item">
-						<ul>
+						<!-- <ul>
 							<li>Zona coworking</li>
 							<li>Salón de cardio</li>
 							<li>Solarium</li>
-						</ul>
+						</ul> -->
 						<span class="number">01</span>
 					</div>
 
-					<a href="#galeria-apartamento" class="btn-general">ver galeria</a>
+					
 				</div>
 			</div>
 
@@ -355,11 +336,11 @@
              <div class="text-plano">
                 <p><strong class="texto-planos">Tipo B 70,00 m2</strong></p>
               </div>
-              	<img src="assets/img/iconos_planos/1.jpg" alt="">
+              	<img onclick="openModal();currentSlide(1)"  src="assets/img/iconos_planos/1.jpg" alt="">
             </div>
             <div class="content-zone__text">
 						<div class="title-general title-general-planos">
-					<h3>PLANOS DEL <span>PROYECTO</span></h3>
+					<h3> detalles del <span>PROYECTO</span></h3>
 				</div>
 						<p>El apartamento típico estará conformado por los siguientes espacios:</p>
             	<div class="items-planos ">
@@ -384,11 +365,11 @@
             <div class="text-plano">
                 <p><strong class="texto-planos">Tipo B 76,00 m2</strong></p>
               </div>
-              <img src="assets/img/iconos_planos/2.jpg" alt="">
+              <img onclick="openModal();currentSlide(2)" src="assets/img/iconos_planos/2.jpg" alt="">
             </div>
             <div class="content-zone__text">
 						<div class="title-general title-general-planos">
-					<h3>PLANOS DEL <span>PROYECTO</span></h3>
+					<h3>detalles del  <span>PROYECTO</span></h3>
 				</div>						<p>El apartamento típico estará conformado por los siguientes espacios:</p>
             	<div class="items-planos ">
 								<ul>
@@ -416,11 +397,11 @@
              <div class="text-plano">
                 <p><strong class="texto-planos">Tipo B 87,00 m2</strong></p>
               </div>
-              <img src="assets/img/iconos_planos/3.jpg" alt="">
+              <img onclick="openModal();currentSlide(3)" src="assets/img/iconos_planos/3.jpg" alt="">
             </div>
             <div class="content-zone__text">
 							<div class="title-general title-general-planos">
-					<h3>PLANOS DEL <span>PROYECTO</span></h3>
+					<h3>detalles del  <span>PROYECTO</span></h3>
 				</div>
 						<p>El apartamento típico estará conformado por los siguientes espacios:</p>
             	<div class="items-planos ">
@@ -456,56 +437,41 @@
 	</section>
 
 
+	<div id="myModal" class="modal">
 
 
+		<div class="modal-content">
+			<button aria-label='Close' class='close' data-dismiss='modal' type='button' onclick="closeModal()">
+				<span aria-hidden='true' class='fa fa-close'></span>
+			</button>
 
-	<!-- <section id="planos" class="container pt-0">
-		<div class="main-plan row">
-			<div class="col-md-6 centeres">
-				<div class="arro">
-					<span>70 m2</span>
-					<span>76 m2</span>
-				</div>
-
-				<div class="main-planos__content">
-					<div class="main-planos__items">
-						<img src="assets/img/planos.png" alt="">
-					</div>
-					<div class="main-planos__items">
-						<img src="assets/img/planos.png" alt="">
-					</div>
-					<div class="main-planos__items">
-						<img src="assets/img/planos.png" alt="">
-					</div>
-
-
-				</div>
+			<div class="mySlides">
+				<!-- <div class="numbertext">1 / 4</div> -->
+				<img src="assets/img/iconos_planos/1.jpg" style="width:100%">
 			</div>
-			<div class="col-md-6">
-				<div class="title-general">
-					<h3>PLANOS DEL <span>PROYECTO</span></h3>
-				</div>
 
-				<div class="main-plan__text">
-					<p>El apartamento típico estará conformado por los siguientes espacios:</p>
-					<ul>
-						<li><img src="assets/img/iconos_planos/icon_2.png" alt=""> Salón</li>
-						<li><img src="assets/img/iconos_planos/icon_3.png" alt=""> Balcón</li>
-						<li><img src="assets/img/iconos_planos/icon_4.png" alt=""> Cocina</li>
-						<li><img src="assets/img/iconos_planos/icon_5.png" alt=""> Zona de ropa</li>
-						<li><img src="assets/img/iconos_planos/icon_6.png" alt=""> Baño social</li>
-						<li><img src="assets/img/iconos_planos/icon_10.png" alt=""> Estudio / alcoba 3</li>
-						<li><img src="assets/img/iconos_planos/icon_9.png" alt=""> Comedor</li>
-						<li><img src="assets/img/iconos_planos/icon_8.png" alt=""> Alcoba 2</li>
-						<li><img src="assets/img/iconos_planos/icon_7.png" alt=""> Alcoba principal con baño privado y
-							vestier</li>
-					</ul>
-					<span class="number number-2 ">03</span>
-				</div>
+			<div class="mySlides">
+				<!-- <div class="numbertext">2 / 4</div> -->
+				<img src="assets/img/iconos_planos/2.jpg" style="width:100%">
 			</div>
-		</div>
-	</section>
- -->
+
+			<div class="mySlides">
+				<!-- <div class="numbertext">3 / 4</div> -->
+				<img src="assets/img/iconos_planos/3.jpg" style="width:100%">
+			</div>
+
+		
+
+
+
+			<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+			<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+
+
+</div>
+</div>
+
 
 	<!-- galey apa -->
 	<section>
@@ -525,80 +491,80 @@
 
 				<div class="galery-items">
 
-					<a href="#">
+					
 						<div class="main-galery-items__card">
-							<div class="main-galery-items__img"
+							<div onclick="openModal1();currentSlide1(1)" class="main-galery-items__img"
 								style="background:url('assets/img/galeria_apartamento/1.jpg')">
 							</div>
 						</div>
-					</a>
+				
 
 				</div>
 
 				<div class="galery-items">
 
-					<a href="#">
+					
 						<div class="main-galery-items__card">
-							<div class="main-galery-items__img"
+							<div onclick="openModal1();currentSlide1(2)" class="main-galery-items__img"
 								style="background:url('assets/img/galeria_apartamento/2.jpg')">
 							</div>
 						</div>
-					</a>
+				
 
 				</div>
 				<div class="galery-items">
 
-					<a href="#">
+					
 						<div class="main-galery-items__card">
-							<div class="main-galery-items__img"
+							<div onclick="openModal1();currentSlide1(3)" class="main-galery-items__img"
 								style="background:url('assets/img/galeria_apartamento/3.jpg')">
 							</div>
 						</div>
-					</a>
+				
 
 				</div>
 				<div class="galery-items">
 
-					<a href="#">
+					
 						<div class="main-galery-items__card">
-							<div class="main-galery-items__img"
+							<div onclick="openModal1();currentSlide1(4)" class="main-galery-items__img"
 								style="background:url('assets/img/galeria_apartamento/4.jpg')">
 							</div>
 						</div>
-					</a>
+				
 
 				</div>
 				<div class="galery-items">
 
-					<a href="#">
+					
 						<div class="main-galery-items__card">
-							<div class="main-galery-items__img"
+							<div onclick="openModal1();currentSlide1(5)" class="main-galery-items__img"
 								style="background:url('assets/img/galeria_apartamento/5.jpg')">
 							</div>
 						</div>
-					</a>
+				
 
 				</div>
 				<div class="galery-items">
 
-					<a href="#">
+					
 						<div class="main-galery-items__card">
-							<div class="main-galery-items__img"
+							<div onclick="openModal1();currentSlide1(6)" class="main-galery-items__img"
 								style="background:url('assets/img/galeria_apartamento/6.jpg')">
 							</div>
 						</div>
-					</a>
+				
 
 				</div>
 				<div class="galery-items">
 
-					<a href="#">
+					
 						<div class="main-galery-items__card">
-							<div class="main-galery-items__img"
+							<div onclick="openModal1();currentSlide1(7)" class="main-galery-items__img"
 								style="background:url('assets/img/galeria_apartamento/7.jpg')">
 							</div>
 						</div>
-					</a>
+				
 				</div>
 			</div>
 						</div>
@@ -611,80 +577,80 @@
 
 				<div class="galery-items">
 
-					<a href="#">
+					
 						<div class="main-galery-items__card">
-							<div class="main-galery-items__img"
+							<div onclick="openModal1();currentSlide1(8)" class="main-galery-items__img"
 								style="background:url('assets/img/galeria_apartamento/1.jpg')">
 							</div>
 						</div>
-					</a>
+				
 
 				</div>
 
 				<div class="galery-items">
 
-					<a href="#">
+					
 						<div class="main-galery-items__card">
-							<div class="main-galery-items__img"
+							<div onclick="openModal1();currentSlide1(9)" class="main-galery-items__img"
 								style="background:url('assets/img/galeria_apartamento/2.jpg')">
 							</div>
 						</div>
-					</a>
+				
 
 				</div>
 				<div class="galery-items">
 
-					<a href="#">
+					
 						<div class="main-galery-items__card">
-							<div class="main-galery-items__img"
+							<div onclick="openModal1();currentSlide1(10)" class="main-galery-items__img"
 								style="background:url('assets/img/galeria_apartamento/3.jpg')">
 							</div>
 						</div>
-					</a>
+				
 
 				</div>
 				<div class="galery-items">
 
-					<a href="#">
+					
 						<div class="main-galery-items__card">
-							<div class="main-galery-items__img"
+							<div onclick="openModal1();currentSlide1(11)" class="main-galery-items__img"
 								style="background:url('assets/img/galeria_apartamento/4.jpg')">
 							</div>
 						</div>
-					</a>
+				
 
 				</div>
 				<div class="galery-items">
 
-					<a href="#">
+					
 						<div class="main-galery-items__card">
-							<div class="main-galery-items__img"
+							<div onclick="openModal1();currentSlide1(12)" class="main-galery-items__img"
 								style="background:url('assets/img/galeria_apartamento/5.jpg')">
 							</div>
 						</div>
-					</a>
+				
 
 				</div>
 				<div class="galery-items">
 
-					<a href="#">
+					
 						<div class="main-galery-items__card">
-							<div class="main-galery-items__img"
+							<div onclick="openModal1();currentSlide1(13)" class="main-galery-items__img"
 								style="background:url('assets/img/galeria_apartamento/6.jpg')">
 							</div>
 						</div>
-					</a>
+				
 
 				</div>
 				<div class="galery-items">
 
-					<a href="#">
+					
 						<div class="main-galery-items__card">
-							<div class="main-galery-items__img"
+							<div onclick="openModal1();currentSlide1(14)" class="main-galery-items__img"
 								style="background:url('assets/img/galeria_apartamento/7.jpg')">
 							</div>
 						</div>
-					</a>
+				
 				</div>
 			</div>
 
@@ -710,6 +676,103 @@
 
 		</div> 
 	</section>
+
+<!--Modal galeria-->
+<div id="myModal1" class="modal">
+
+
+	<div class="modal-content">
+		<button aria-label='Close' class='close' data-dismiss='modal' type='button' onclick="closeModal1()">
+			<span aria-hidden='true' class='fa fa-close'></span>
+		</button>
+
+		<div class="mySlides1">
+			<!-- <div class="numbertext">1 / 4</div> -->
+			<img src="assets/img/galeria_apartamento/1.jpg" style="width:100%">
+		</div>
+
+		<div class="mySlides1">
+			<!-- <div class="numbertext">2 / 4</div> -->
+			<img src="assets/img/galeria_apartamento/2.jpg" style="width:100%">
+		</div>
+
+		<div class="mySlides1">
+			<!-- <div class="numbertext">3 / 4</div> -->
+			<img src="assets/img/galeria_apartamento/3.jpg" style="width:100%">
+		</div>
+
+		<div class="mySlides1">
+			<!-- <div class="numbertext">1 / 4</div> -->
+			<img src="assets/img/galeria_apartamento/4.jpg" style="width:100%">
+		</div>
+
+		<div class="mySlides1">
+			<!-- <div class="numbertext">2 / 4</div> -->
+			<img src="assets/img/galeria_apartamento/5.jpg" style="width:100%">
+		</div>
+
+		<div class="mySlides1">
+			<!-- <div class="numbertext">3 / 4</div> -->
+			<img src="assets/img/galeria_apartamento/6.jpg" style="width:100%">
+		</div>
+		<div class="mySlides1">
+			<!-- <div class="numbertext">1 / 4</div> -->
+			<img src="assets/img/galeria_apartamento/7.jpg" style="width:100%">
+		</div>
+
+		<div class="mySlides1">
+			<!-- <div class="numbertext">2 / 4</div> -->
+			<img src="assets/img/galeria_apartamento/1.jpg" style="width:100%">
+		</div>
+
+		<div class="mySlides1">
+			<!-- <div class="numbertext">3 / 4</div> -->
+			<img src="assets/img/galeria_apartamento/2.jpg" style="width:100%">
+		</div>
+		<div class="mySlides1">
+			<!-- <div class="numbertext">1 / 4</div> -->
+			<img src="assets/img/galeria_apartamento/3.jpg" style="width:100%">
+		</div>
+
+		<div class="mySlides1">
+			<!-- <div class="numbertext">2 / 4</div> -->
+			<img src="assets/img/galeria_apartamento/4.jpg" style="width:100%">
+		</div>
+
+		<div class="mySlides1">
+			<!-- <div class="numbertext">3 / 4</div> -->
+			<img src="assets/img/galeria_apartamento/5.jpg" style="width:100%">
+		</div>
+		<div class="mySlides1">
+			<!-- <div class="numbertext">1 / 4</div> -->
+			<img src="assets/img/galeria_apartamento/6.jpg" style="width:100%">
+		</div>
+
+		<div class="mySlides1">
+			<!-- <div class="numbertext">2 / 4</div> -->
+			<img src="assets/img/galeria_apartamento/7.jpg" style="width:100%">
+		</div>
+
+		
+
+	
+
+
+
+		<a class="prev" onclick="plusSlides1(-1)">&#10094;</a>
+		<a class="next" onclick="plusSlides1(1)">&#10095;</a>
+
+
+
+</div>
+</div>
+
+
+
+
+
+
+
 	<!-- ubicacion -->
 	<section  class="">
 
@@ -786,8 +849,8 @@
 							</div>
 
 							<div class="col-md-12 center pl-4 mt-2 mb-2">
-								<input type="checkbox" class="custom-control-input " id="customCheck" name="example1" />
-								<label class="custom-control-label" for="customCheck">Acepto <a style="color: white !important; border-bottom: 1px solid white; " target="_blank" href="assets/img/MANUAL_DE_POLITICAS_PROMOTORA.pdf">politicas y
+								<input type="checkbox" class="custom-control-input " id="customCheck1" name="example1" />
+								<label class="custom-control-label" for="customCheck1">Acepto <a style="color: white !important; border-bottom: 1px solid white; " target="_blank" href="assets/img/MANUAL_DE_POLITICAS_PROMOTORA.pdf">politicas y
 									privacidad</a></label>
 							</div>
 							<div class="row form-group">
@@ -817,7 +880,7 @@
 			<div class="footer__grid--tem ">
 				<img src="assets/img/logo.png" alt="">
 
-				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus vitae, ipsum minus perferendis magni repellat doloremque cumque.
+				<p>Ubicado en el municipio de Sabaneta, Antioquia, sector Loma de San José, zona de alta valorización en una reserva natural que te entregará toda la tranquilidad que necesitas.
 				</p>
 				<ul>
 					<li><a target="_blank" href="https://www.facebook.com/nivelpropiedadraiz"><img src="assets/img/iconos/fb.png" alt=""></a></li>
@@ -876,7 +939,7 @@
 
 	<div class="btns">
 		<a href="http://api.whatsapp.com/send?phone=573148775701"><img src="assets/img/2.png" alt=""></a>
-		<a href="#banner"><img src="assets/img/1.png" alt=""></a>
+		<a href="#navtop"><img src="assets/img/1.png" alt=""></a>
 
 	</div>
 	<script src="assets/js/jquery.min.js"></script>

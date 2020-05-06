@@ -1075,9 +1075,44 @@
 
 
 
+@media (min-width: 1440px) and (max-height: 900px){
+ 
+  .main-banner__text {
+    top: 10%;
+  }
+  .main-banner__text p:nth-child(1){
+    font-size: 45px;
+  }
+  .main-banner__text span{
+    font-size: 30px;
+  }
+  .main-banner__text p{
+    font-size: 1.6rem;
+  }
+  .main-zone__item {
+    position: relative;
+    margin-bottom: 110px;
+  }
+  .h-5 {
+    height: 250px;
+  }
+}
 
 
-
+@media (min-width: 1500px) and (max-width:  1600px){
+  .main-banner__text p:nth-child(1){
+    font-size: 25px;
+  }
+  .main-banner__text span{
+    font-size: 25px;
+  }
+  .main-banner__text p{
+    font-size: 1.4rem;
+  }
+  .main-banner__text .price p {
+    font-size: 2rem;
+  }
+}
 
 
 

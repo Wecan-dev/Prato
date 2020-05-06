@@ -135,7 +135,7 @@ a:hover {
 
 .main-banner__text {
 	position: absolute;
-	top: 10%;
+	top: 5%;
 	color: #fff;
 	margin-left: 100px;
 	padding: 35px;
@@ -144,7 +144,7 @@ a:hover {
 
 .main-banner__text p {
 	color: #fff;
-	font-size: 1.6rem;
+	font-size: 1.3rem;
 	line-height: 1.2;
 	font-family: 'Montserrat', sans-serif;
 	font-weight: 500;
@@ -152,7 +152,7 @@ a:hover {
 
 .main-banner__text p:nth-child(1) {
 	font-family: "PlayfairDisplay";
-	font-size: 45px;
+	font-size: 40px;
 	line-height: 1.3;
 	text-transform: uppercase;
 }
@@ -180,7 +180,7 @@ a:hover {
 
 
 .main-banner__text span {
-	font-size: 30px;
+	font-size: 25px;
 	font-family: 'Montserrat', sans-serif;
 	font-weight: 300;
 }
@@ -267,6 +267,9 @@ a:hover {
 	font-family: "Montserrat Thin";
 }
 
+.form__item--contact input{
+	color: #fff !important;
+}
 input,
 textarea {
 
@@ -431,7 +434,7 @@ label {
 
 .main-zone__item {
 	position: relative;
-	margin-bottom: 140px;
+	margin-bottom: 80px;
 	transition: .5s;
 }
 
@@ -577,7 +580,7 @@ label {
 }
 
 .h-5 {
-	height: 320px;
+	height: 220px;
 }
 
 /* galeria */
@@ -704,6 +707,8 @@ background-repeat: no-repeat!important;
 	float: left;
 	width: 50%;
 	padding: 25px;
+	height: 330px;
+	object-fit: cover;
 
 }
 
@@ -1301,3 +1306,157 @@ textarea.form-control {
 .items-planos__salto{
 	display: none;
 }
+
+
+
+
+/* The Modal (background) */
+.modal {
+	display: none;
+	position: fixed;
+	/* z-index: 1; */
+	padding-top: 100px;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	overflow: auto;
+	background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* Modal Content */
+.modal-content {
+	position: relative;
+	background-color: #fefefe;
+	margin: auto;
+	padding: 0;
+	width: 90%;
+	max-width: 1200px;
+}
+
+/* The Close Button */
+#videoModal .close {
+	color: white;
+	position: absolute;
+	top: -20px !important;
+	right: 25px;
+	font-size: 35px;
+	font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+	color: #999;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+.mySlides, .mySlides1, .mySlides2 {
+	display: none;
+	height: 500px;
+}
+.mySlides img, .mySlides1 img,.mySlides2 img{
+	width: 100%;
+	height: 100%;
+	object-fit: contain;
+}
+.cursor {
+	cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+	cursor: pointer;
+	position: absolute;
+	top: 35rem;
+	width: auto;
+	padding: 16px;
+	margin-top: -50px;
+	color: white !important;
+	font-weight: bold;
+	font-size: 20px;
+	transition: 0.6s ease;
+	border-radius: 0px !important;
+	user-select: none;
+	-webkit-user-select: none;
+	/* background-color: rgba(0, 0, 0, 0.8); */
+}
+
+/* Position the "next button" to the right */
+.next {
+	right: 15rem;
+	border-radius: 3px 0 0 3px;
+}
+.prev{
+	left: 15rem;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+	background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+	color: #f2f2f2;
+	font-size: 12px;
+	padding: 8px 12px;
+	position: absolute;
+	top: 0;
+}
+
+img {
+	margin-bottom: -4px;
+}
+
+.caption-container {
+	text-align: center;
+	background-color: black;
+	padding: 2px 16px;
+	color: white;
+}
+
+.demo {
+	opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+	opacity: 1;
+}
+
+img.hover-shadow {
+	transition: 0.3s;
+}
+
+.hover-shadow:hover {
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#myModal .modal-content, #myModal1 .modal-content,#myModal2 .modal-content{
+	width: 45%;
+	background-color: transparent;
+	border: none;
+}
+
+#myModal .modal-content .close, #myModal1 .modal-content .close, #myModal2 .modal-content .close{
+	color: white;
+	position: absolute;
+	top: -5rem;
+    right: -23rem;
+	font-size: 30px;
+	font-weight: bold;
+	background-color: rgba(0,0,0,0.5) !important;
+	padding: 5px !important;
+	opacity: 1;
+}
+
+
+
+
+#myModal, #myModal1, #myModal2{
+	background-color: rgba(0, 0, 0, 0.9);
+}
+
