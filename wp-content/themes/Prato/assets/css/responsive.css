@@ -251,6 +251,12 @@
 }
 
 @media (min-width: 0px) and (max-width: 767px) {
+  .title-general {
+    margin-left: 0px;
+  }
+  ._form_element._field4._full_width {
+		margin-top: -0.6rem !important;
+	}
   .next {
     right: 4rem;
     
@@ -694,11 +700,11 @@
   }
 
  .title-general h3 {
-    font-size: 17px;
+    font-size: 20px;
 }
 
   .title-general span {
-    font-size: 17px;
+    font-size: 20px;
 
   }
 
