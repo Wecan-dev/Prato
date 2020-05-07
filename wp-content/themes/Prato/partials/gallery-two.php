@@ -197,6 +197,12 @@
   </div>
   
   <div id="ubicacion"></div>
+  <div class="imagenes-360">
+  <div class="title-general">
+    <h3>Recorrido <span>360</span></h3>
+  </div>
+  <iframe class="mt-3" src="https://my.matterport.com/show/?m=LWWgtMM8Ujr" width="100%" height="400" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+  </div>
 </div>
 
 </div> 
