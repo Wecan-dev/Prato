@@ -165,9 +165,9 @@
 
 
   </div>
+
+  <span class="number number-2   number-3">06</span>
 </div>
 
-
-<span class="number number-2   number-3">06</span>
 </div>
 </section>
