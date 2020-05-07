@@ -12,7 +12,7 @@
 							</div>
 							<div class="main-banner__title main-banner__title--error">
 								<p>
-									4<span class="letra-color">0</span>4
+									404
 								</p>
 							</div>
 							<div class="main-banner__description main-banner__error">
@@ -28,7 +28,7 @@
 					</div>
 				</div>
 				<div class="main-banner__img main-banner__img--thanks">
-					<img src="<?php echo get_template_directory_uri();?>/assets/img/banners/1.jpg">
+					<img src="<?php echo get_template_directory_uri();?>/assets/img/1.jpg">
 				</div>
 			</div>
 		</div>

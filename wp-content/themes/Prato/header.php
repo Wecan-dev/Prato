@@ -4,7 +4,7 @@
 <head>
 	<meta charset="UTF-8" />
 	<meta content="width=device-width, initial-scale=1.0" name="viewport" />
-	<title>prato</title>
+	<title>Prato De La Toscana</title>
 	<link href="<?php echo get_template_directory_uri();?>/assets/css/bootstrap.min.css" rel="stylesheet" />
 	<link
 		href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100&display=swap"
@@ -21,11 +21,12 @@
 
 <body>
 <div id="navtop" class="pdd-top">
+	<?php if(is_home()): ?>
 		<header>
 		<nav class="navbar navbar-expand-md fixed-top navbar-fixed-js" id="nav">
 			<div class="container">
 				<div class="main-brand">
-					<a class="navbar-brand" href="index.html">
+					<a class="navbar-brand" href="<?php echo bloginfo('url').'/';?>">
 						<img id="iso" src="<?php echo get_template_directory_uri();?>/assets/img/logo-header.png" alt="" />
 					</a>
 					<button class="navbar-toggler p-2 border-0 hamburger hamburger--elastic ml-autos" data-toggle="offcanvas" type="button">
@@ -70,3 +71,55 @@
 			</div>
 		</nav>
 	</header>
+	<?php else:?>
+
+		<header>
+		<nav class="navbar navbar-expand-md fixed-top navbar-fixed-js" id="nav">
+			<div class="container">
+				<div class="main-brand">
+					<a class="navbar-brand" href="<?php echo bloginfo('url').'/';?>">
+						<img id="iso" src="<?php echo get_template_directory_uri();?>/assets/img/logo-header.png" alt="" />
+					</a>
+					<button class="navbar-toggler p-2 border-0 hamburger hamburger--elastic ml-autos" data-toggle="offcanvas" type="button">
+            <span class="hamburger-box">
+              <span class="hamburger-inner"></span>
+            </span>
+          </button>
+				</div>
+				<div class="navbar-collapse offcanvas-collapse">
+					<ul class="navbar-nav m-auto">
+						<li class="nav-item ">
+							<a class="nav-link  " href="<?php echo bloginfo('url').'/#acerca';?>">Acerca del PROYECTO</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link " href="<?php echo bloginfo('url').'/#zonas-comunes';?>">ZONAS COMUNES</a>
+
+						</li>
+						<li class="nav-item">
+							<a class="nav-link " href="<?php echo bloginfo('url').'/#galeria-exterior';?>">GALERÍA EXTERIOR</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link " href="<?php echo bloginfo('url').'/#planos-proyecto';?>">PLANOS DEL PROYECTO</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link " href="<?php echo bloginfo('url').'/#galeria-apartamento';?>">galería apartamento</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="<?php echo bloginfo('url').'/#formulario';?>">contacto</a>
+						</li>
+					
+					</ul>
+				
+				</div>
+			</div>
+			<div class="social-icons d-none">
+				<li class="nav-item ">
+					<a class="nav-link" target="_blank" href="https://www.facebook.com/nivelpropiedadraiz"><img src="<?php echo get_template_directory_uri();?>/assets/img/iconos/fb_2.png" alt=""></a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" target="_blank" href="https://www.instagram.com/nivelpropiedadraiz"><img src="<?php echo get_template_directory_uri();?>/assets/img/iconos/instagram_2.png" alt=""></a>
+				</li>
+			</div>
+		</nav>
+	</header>
+	<?php endif; ?>
