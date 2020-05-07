@@ -7,28 +7,29 @@
 		<div class="form__item ">
 
 			<form method="POST" action="https://nivel.activehosted.com/proc.php" id="_form_11_" class="_form _form_11 _inline-form  _dark" novalidate style="width: 100%;">
-				<div class="row" >
-					<div class="col-md-5 col-lg-4 formulario-banner">
-						<input type="hidden" name="u" value="11" />
-						<input type="hidden" name="f" value="11" />
-						<input type="hidden" name="s" />
-						<input type="hidden" name="c" value="0" />
-						<input type="hidden" name="m" value="0" />
-						<input type="hidden" name="act" value="sub" />
-						<input type="hidden" name="v" value="2" />
+				<div class="" >
+					<div class="_form-content row">
+						<div class="col-md-5 col-lg-4 formulario-banner">
+							<input type="hidden" name="u" value="11" />
+							<input type="hidden" name="f" value="11" />
+							<input type="hidden" name="s" />
+							<input type="hidden" name="c" value="0" />
+							<input type="hidden" name="m" value="0" />
+							<input type="hidden" name="act" value="sub" />
+							<input type="hidden" name="v" value="2" />
 
-						<!-- utm source -->
-						<input type="hidden" name="field[10]" value="<?php echo $_GET['utm_source']; ?>"/>
-						<!-- utm medium -->
-						<input type="hidden" name="field[11]" value="<?php echo $_GET['utm_medium']; ?>"/>
-						<!-- utm campaign -->
-						<input type="hidden" name="field[12]" value="<?php echo $_GET['utm_campaign']; ?>"/>
-						<!-- utm term -->
-						<input type="hidden" name="field[13]" value="<?php echo $_GET['utm_term']; ?>"/>
-						<!-- referrer url -->
-						<input type="hidden" name="field[14]" value="<?php echo $_SERVER['HTTP_REFERER']; ?>"/>
+							<!-- utm source -->
+							<input type="hidden" name="field[10]" value="<?php echo $_GET['utm_source']; ?>"/>
+							<!-- utm medium -->
+							<input type="hidden" name="field[11]" value="<?php echo $_GET['utm_medium']; ?>"/>
+							<!-- utm campaign -->
+							<input type="hidden" name="field[12]" value="<?php echo $_GET['utm_campaign']; ?>"/>
+							<!-- utm term -->
+							<input type="hidden" name="field[13]" value="<?php echo $_GET['utm_term']; ?>"/>
+							<!-- referrer url -->
+							<input type="hidden" name="field[14]" value="<?php echo $_SERVER['HTTP_REFERER']; ?>"/>
 
-						<div class="_form-content">
+
 							<div class="_form_element _x86821064 _full_width " >
 								<label class="_form-label">
 
@@ -62,7 +63,6 @@
 								</div>
 							</div>
 
-							
 						</div>
 						<div class="col-md-6">
 
