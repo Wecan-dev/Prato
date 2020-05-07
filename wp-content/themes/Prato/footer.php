@@ -62,7 +62,7 @@
 
 <div class="btns">
 	<a href="http://api.whatsapp.com/send?phone=573148775701"><img src="<?php echo get_template_directory_uri();?>/assets/img/2.png" alt=""></a>
-	<a href="#navtop"><img src="<?php echo get_template_directory_uri();?>/assets/img/1.png" alt=""></a>
+	<a href="#arrow-top"><img src="<?php echo get_template_directory_uri();?>/assets/img/1.png" alt=""></a>
 
 </div>
 

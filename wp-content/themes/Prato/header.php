@@ -20,7 +20,7 @@
 </head>
 
 <body>
-<div id="navtop" class="pdd-top">
+<div  class="pdd-top">
 	<?php if(is_home()): ?>
 		<header>
 		<nav class="navbar navbar-expand-md fixed-top navbar-fixed-js" id="nav">

@@ -1566,3 +1566,6 @@ a:hover {
 	._form_element._field4._full_width {
 		margin-top: -1.6rem !important;
 	}
+	.main-contact textarea{
+		color: #fff !important;
+	}

@@ -1,5 +1,5 @@
 <!-- banner -->
-<section id="navtop" class="banner p-0 section">
+<section id="arrow-top" class="banner p-0 section">
 
 <div id="pratos-slider"  class="main-banner__content">
   <div class="main-banner__items">
