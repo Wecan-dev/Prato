@@ -62,45 +62,46 @@
 								</div>
 							</div>
 
+							
 						</div>
-					</div>
-					<div class="col-md-6">
+						<div class="col-md-6">
 
-						<div class="_form_element _field2 _full_width " >
-							<label class="_form-label">
-
-							</label>
-							<div class="_field-wrapper form-group">
-								<textarea class="form-control" name="field[2]" placeholder="Mensaje *"  ></textarea>
-							</div>
-						</div>
-						<div class="_form_element _field4 _full_width " >
-							<div class="_row">
+							<div class="_form_element _field2 _full_width " >
 								<label class="_form-label">
 
 								</label>
+								<div class="_field-wrapper form-group">
+									<textarea class="form-control" name="field[2]" placeholder="Mensaje *"  ></textarea>
+								</div>
 							</div>
-							<input data-autofill="false" type="hidden" name="field[4][]" value="~|">
-							<div class="_row _checkbox-radio">
-								<input id="field_4Acepto" type="checkbox" name="field[4][]" value="Acepto"  required >
-								<span>
-									<label for="field_4Acepto">
-										Acepto <a target="_blank" href="<?php echo get_template_directory_uri();?>/assets/img/MANUAL_DE_POLITICAS_PROMOTORA.pdf"><span style="color: white; font-size: 14px; border-bottom: 1px solid;" >politicas y
-										privacidad</span></a>
-									</label>
-								</span>
-							</div>
-						</div>
-						<div class="_field-wrapper" style="display: none;">
-							<input type="text" name="field[14]" value="" placeholder="" />
-						</div>
+							<div class="_form_element _field4 _full_width " >
+								<div class="_row">
+									<label class="_form-label">
 
-						<div class="_button-wrapper _full_width">
-							<button id="_form_11_submit" class="_submit btn btn-black btn-form " type="submit">
-								Enviar
-							</button>
-						</div>
-						<div class="_clear-element">
+									</label>
+								</div>
+								<input data-autofill="false" type="hidden" name="field[4][]" value="~|">
+								<div class="_row _checkbox-radio">
+									<input id="field_4Acepto" type="checkbox" name="field[4][]" value="Acepto"  required >
+									<span>
+										<label for="field_4Acepto">
+											Acepto <a target="_blank" href="<?php echo get_template_directory_uri();?>/assets/img/MANUAL_DE_POLITICAS_PROMOTORA.pdf"><span style="color: white; font-size: 14px; border-bottom: 1px solid;" >politicas y
+											privacidad</span></a>
+										</label>
+									</span>
+								</div>
+							</div>
+							<div class="_field-wrapper" style="display: none;">
+								<input type="text" name="field[14]" value="" placeholder="" />
+							</div>
+
+							<div class="_button-wrapper _full_width">
+								<button id="_form_11_submit" class="_submit btn btn-black btn-form " type="submit">
+									Enviar
+								</button>
+							</div>
+							<div class="_clear-element">
+							</div>
 						</div>
 					</div>
 					<div class="_form-thank-you" style="display:none;">
