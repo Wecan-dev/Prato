@@ -17,6 +17,7 @@
 	<link href="<?php echo get_template_directory_uri();?>/assets/css/animate/animate.css" rel='stylesheet'>
 	<link href="<?php echo get_template_directory_uri();?>/assets/css/main.css" rel="stylesheet" />
 	<link href="<?php echo get_template_directory_uri();?>/assets/css/responsive.css" rel="stylesheet" />
+	<link rel="icon" type="image/png" sizes="32x32" href="<?php echo get_template_directory_uri();?>/assets/img/favicon-32x32.jpg">
 </head>
 
 <body>
