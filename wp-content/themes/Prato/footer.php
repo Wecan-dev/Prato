@@ -388,9 +388,8 @@ addEvent(form_to_submit, 'submit', form_submit);
 <script src="<?php echo get_template_directory_uri();?>/assets/js/setting-slick.js"></script>
 <script src='<?php echo get_template_directory_uri();?>/assets/js/wow.min.js'></script>
 <script src="<?php echo get_template_directory_uri();?>/assets/js/main.js"></script>
-
 </div>
-
+<?php wp_footer(); ?>
 </body>
 
 </html>
