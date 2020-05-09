@@ -85,7 +85,7 @@
 									<input id="field_4Acepto" type="checkbox" name="field[4][]" value="Acepto"  required >
 									<span>
 										<label for="field_4Acepto">
-											Acepto <a target="_blank" href="<?php echo get_template_directory_uri();?>/assets/img/MANUAL_DE_POLITICAS_PROMOTORA.pdf"><span style="color: white; font-size: 14px; border-bottom: 1px solid;" >politicas y
+											Acepto <a target="_blank" href="<?php echo get_template_directory_uri();?>/assets/img/MANUAL_DE_POLITICAS_PROMOTORA.pdf"><span style="color: white; font-size: 14px; border-bottom: 1px solid;" >políticas y
 											privacidad</span></a>
 										</label>
 									</span>
