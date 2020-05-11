@@ -346,7 +346,7 @@ a:hover {
 		.content-form {
 			background: #00613c;
 			color: #fff;
-			padding: 32px 0;
+			padding: 0 32px 30px;
 			display: grid;
 			grid-template-columns: 34% 65%;
 		}
@@ -1130,6 +1130,7 @@ a:hover {
 		padding-left: 35px;
 		padding-right: 35px;
 		padding-top: 10px;
+		padding-bottom: 30px;
 	}
 
 	.form-control:focus {
