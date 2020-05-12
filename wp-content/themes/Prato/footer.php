@@ -56,6 +56,12 @@
 			</ul>
 		</div>
 	</div>
+	<div class="copy">
+    <div class="main-end__text">
+      <p class="end-text">
+        <a target="_blank" href="https://sigma.la/">Copyright © 2020 Sigma Studios</a>
+      </p>
+    </div>
 </footer>
 
 
