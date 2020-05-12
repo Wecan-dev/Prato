@@ -15,7 +15,7 @@
 	<meta name='keywords', content=''>
 	<meta name="robots" content="index, follow">
 
-		<!-- Blog Meta Data -->
+	<!-- Blog Meta Data -->
 	<meta name="dc.language" content="es">
 	<meta name="dc.source" content="<?php bloginfo('url');?>">
 	<meta itemprop="url" content="<?php bloginfo('url');?>">
@@ -47,108 +47,112 @@
 	<link href="<?php echo get_template_directory_uri();?>/assets/img/favicon-32x32.jpg"  rel="icon" type="image/png" sizes="32x32">
 	<?php wp_head(); ?>
 </head>
-
+<style>
+	.fixed-30{
+		top: 30px !important;
+	}
+</style>
 <body>
-<div  class="pdd-top">
-	<?php if(is_home()): ?>
-		<header>
-		<nav class="navbar navbar-expand-md fixed-top navbar-fixed-js" id="nav">
-			<div class="container">
-				<div class="main-brand">
-					<a class="navbar-brand" href="<?php echo bloginfo('url').'/';?>">
-						<img id="iso" src="<?php echo get_template_directory_uri();?>/assets/img/logo-header.png" alt="" />
-					</a>
-					<button class="navbar-toggler p-2 border-0 hamburger hamburger--elastic ml-autos" data-toggle="offcanvas" type="button">
-            <span class="hamburger-box">
-              <span class="hamburger-inner"></span>
-            </span>
-          </button>
-				</div>
-				<div class="navbar-collapse offcanvas-collapse">
-					<ul class="navbar-nav m-auto">
+	<div  class="pdd-top">
+		<?php if(is_home()): ?>
+			<header>
+				<nav class="navbar navbar-expand-md fixed-top navbar-fixed-js  <?php if ( is_user_logged_in() ){echo 'fixed-30';}?> " id="nav">
+					<div class="container">
+						<div class="main-brand">
+							<a class="navbar-brand" href="<?php echo bloginfo('url').'/';?>">
+								<img id="iso" src="<?php echo get_template_directory_uri();?>/assets/img/logo-header.png" alt="" />
+							</a>
+							<button class="navbar-toggler p-2 border-0 hamburger hamburger--elastic ml-autos" data-toggle="offcanvas" type="button">
+								<span class="hamburger-box">
+									<span class="hamburger-inner"></span>
+								</span>
+							</button>
+						</div>
+						<div class="navbar-collapse offcanvas-collapse">
+							<ul class="navbar-nav m-auto">
+								<li class="nav-item ">
+									<a class="nav-link  " href="#acerca">Acerca del PROYECTO</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link " href="#zonas-comunes">ZONAS COMUNES</a>
+
+								</li>
+								<li class="nav-item">
+									<a class="nav-link " href="#galeria-exterior">GALERÍA EXTERIOR</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link " href="#planos-proyecto">PLANOS DEL PROYECTO</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link " href="#galeria-apartamento">galería apartamento</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="#formulario">contacto</a>
+								</li>
+
+							</ul>
+
+						</div>
+					</div>
+					<div class="social-icons d-none">
 						<li class="nav-item ">
-							<a class="nav-link  " href="#acerca">Acerca del PROYECTO</a>
+							<a class="nav-link" target="_blank" href="https://www.facebook.com/nivelpropiedadraiz"><img src="<?php echo get_template_directory_uri();?>/assets/img/iconos/fb_2.png" alt=""></a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link " href="#zonas-comunes">ZONAS COMUNES</a>
+							<a class="nav-link" target="_blank" href="https://www.instagram.com/nivelpropiedadraiz"><img src="<?php echo get_template_directory_uri();?>/assets/img/iconos/instagram_2.png" alt=""></a>
+						</li>
+					</div>
+				</nav>
+			</header>
+			<?php else:?>
 
-						</li>
-						<li class="nav-item">
-							<a class="nav-link " href="#galeria-exterior">GALERÍA EXTERIOR</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link " href="#planos-proyecto">PLANOS DEL PROYECTO</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link " href="#galeria-apartamento">galería apartamento</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="#formulario">contacto</a>
-						</li>
-					
-					</ul>
-				
-				</div>
-			</div>
-			<div class="social-icons d-none">
-				<li class="nav-item ">
-					<a class="nav-link" target="_blank" href="https://www.facebook.com/nivelpropiedadraiz"><img src="<?php echo get_template_directory_uri();?>/assets/img/iconos/fb_2.png" alt=""></a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" target="_blank" href="https://www.instagram.com/nivelpropiedadraiz"><img src="<?php echo get_template_directory_uri();?>/assets/img/iconos/instagram_2.png" alt=""></a>
-				</li>
-			</div>
-		</nav>
-	</header>
-	<?php else:?>
+				<header>
+					<nav class="navbar navbar-expand-md fixed-top navbar-fixed-js <?php if ( is_user_logged_in() ){echo 'fixed-30';}?>" id="nav">
+						<div class="container">
+							<div class="main-brand">
+								<a class="navbar-brand" href="<?php echo bloginfo('url').'/';?>">
+									<img id="iso" src="<?php echo get_template_directory_uri();?>/assets/img/logo-header.png" alt="" />
+								</a>
+								<button class="navbar-toggler p-2 border-0 hamburger hamburger--elastic ml-autos" data-toggle="offcanvas" type="button">
+									<span class="hamburger-box">
+										<span class="hamburger-inner"></span>
+									</span>
+								</button>
+							</div>
+							<div class="navbar-collapse offcanvas-collapse">
+								<ul class="navbar-nav m-auto">
+									<li class="nav-item ">
+										<a class="nav-link  " href="<?php echo bloginfo('url').'/#acerca';?>">Acerca del PROYECTO</a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link " href="<?php echo bloginfo('url').'/#zonas-comunes';?>">ZONAS COMUNES</a>
 
-		<header>
-		<nav class="navbar navbar-expand-md fixed-top navbar-fixed-js" id="nav">
-			<div class="container">
-				<div class="main-brand">
-					<a class="navbar-brand" href="<?php echo bloginfo('url').'/';?>">
-						<img id="iso" src="<?php echo get_template_directory_uri();?>/assets/img/logo-header.png" alt="" />
-					</a>
-					<button class="navbar-toggler p-2 border-0 hamburger hamburger--elastic ml-autos" data-toggle="offcanvas" type="button">
-            <span class="hamburger-box">
-              <span class="hamburger-inner"></span>
-            </span>
-          </button>
-				</div>
-				<div class="navbar-collapse offcanvas-collapse">
-					<ul class="navbar-nav m-auto">
-						<li class="nav-item ">
-							<a class="nav-link  " href="<?php echo bloginfo('url').'/#acerca';?>">Acerca del PROYECTO</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link " href="<?php echo bloginfo('url').'/#zonas-comunes';?>">ZONAS COMUNES</a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link " href="<?php echo bloginfo('url').'/#galeria-exterior';?>">GALERÍA EXTERIOR</a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link " href="<?php echo bloginfo('url').'/#planos-proyecto';?>">PLANOS DEL PROYECTO</a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link " href="<?php echo bloginfo('url').'/#galeria-apartamento';?>">galería apartamento</a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link" href="<?php echo bloginfo('url').'/#formulario';?>">contacto</a>
+									</li>
 
-						</li>
-						<li class="nav-item">
-							<a class="nav-link " href="<?php echo bloginfo('url').'/#galeria-exterior';?>">GALERÍA EXTERIOR</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link " href="<?php echo bloginfo('url').'/#planos-proyecto';?>">PLANOS DEL PROYECTO</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link " href="<?php echo bloginfo('url').'/#galeria-apartamento';?>">galería apartamento</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="<?php echo bloginfo('url').'/#formulario';?>">contacto</a>
-						</li>
-					
-					</ul>
-				
-				</div>
-			</div>
-			<div class="social-icons d-none">
-				<li class="nav-item ">
-					<a class="nav-link" target="_blank" href="https://www.facebook.com/nivelpropiedadraiz"><img src="<?php echo get_template_directory_uri();?>/assets/img/iconos/fb_2.png" alt=""></a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" target="_blank" href="https://www.instagram.com/nivelpropiedadraiz"><img src="<?php echo get_template_directory_uri();?>/assets/img/iconos/instagram_2.png" alt=""></a>
-				</li>
-			</div>
-		</nav>
-	</header>
-	<?php endif; ?>
+								</ul>
+
+							</div>
+						</div>
+						<div class="social-icons d-none">
+							<li class="nav-item ">
+								<a class="nav-link" target="_blank" href="https://www.facebook.com/nivelpropiedadraiz"><img src="<?php echo get_template_directory_uri();?>/assets/img/iconos/fb_2.png" alt=""></a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" target="_blank" href="https://www.instagram.com/nivelpropiedadraiz"><img src="<?php echo get_template_directory_uri();?>/assets/img/iconos/instagram_2.png" alt=""></a>
+							</li>
+						</div>
+					</nav>
+				</header>
+				<?php endif; ?>
