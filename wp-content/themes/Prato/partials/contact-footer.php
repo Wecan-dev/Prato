@@ -83,9 +83,9 @@
                   </div>
                   <input data-autofill="false" type="hidden" name="field[4][]" value="~|">
                   <div class="_row _checkbox-radio">
-                    <input id="field_4Acepto" type="checkbox" name="field[4][]" value="Acepto"   >
+                    <input id="field_4Acepto1"  required type="checkbox" name="field[4][]" value="Acepto"   >
                     <span>
-                      <label for="field_4Acepto">
+                      <label for="field_4Acepto1">
                        <span style="color: white; font-size: 14px;" >Acepto</span> <a target="_blank" href="<?php echo get_template_directory_uri();?>/assets/img/MANUAL_DE_POLITICAS_PROMOTORA.pdf"><span style="color: white; font-size: 14px; border-bottom: 1px solid;" >políticas y
                        privacidad</span></a>
                      </label>

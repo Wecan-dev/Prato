@@ -1,8 +1,9 @@
 <!-- Acerca de.... -->
-<section class="section">
+<?php if(have_posts()): the_post(); ?>
+	<section class="section">
 		<div class="main-about">
 			<div class="main-about__item">
-				<img src="<?php echo get_template_directory_uri();?>/assets/img/acerca.jpg " class='wow fadeInUp' data-wow-delay='.5s' alt="">
+				<img src="<?php the_field('imagen_acerca_de'); ?>" class='wow fadeInUp' data-wow-delay='.5s' alt="">
 			</div>
 			<div class="main-about__item">
 				<div class="title-general">
@@ -11,9 +12,9 @@
 
 				<div class="h-5">
 					<p>
-						Prato apartamentos hará parte de la ciudadela Toscana, una de las obras más importantes de Sabaneta en el sector de la Loma de San José, que le permitirán ser un proyecto de fácil acceso y cercano a diferentes lugares de interés como el centro comercial Aves Marías, el mall Zaratoga, la Universidad Ceipa, el Hospital Venancio Díaz, entre otros.  Además la ciudadela Toscana contará con una reserva natural con cerca de 70000 metros cuadrados.
+						<?php the_field('test'); ?>
 					</p>
-					
+
 				</div>
 				<!--zonas -->
 				<div class="main-zone">
@@ -37,3 +38,4 @@
 
 
 	</section>
+	<?php endif; ?>
